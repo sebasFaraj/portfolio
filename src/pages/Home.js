@@ -2,7 +2,7 @@ import { Typewriter } from "../components/Typewriter"
 
 export const Home = () => {
     return (
-        <main className = "homeContainer container-fluid">
+        <main className = "container-fluid homeContainer ">
             <h1 className = "mainText">Hi, I'm Sebastian Faraj</h1>
             <div>
                 <span className = "subText">I'm a </span>

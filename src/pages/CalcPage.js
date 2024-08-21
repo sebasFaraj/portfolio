@@ -21,7 +21,7 @@ export const CalcPage = () => {
                         <p>If you want to use this in your own project, download the components file found in the GitHub and then use it's respective tag. This component uses Bootstrap styling</p>
                     </div>         
                 </div>
-                <div className = "calculatorContainer flex justify-conent-center col-xl-4 col-lg-4 col-sm-6 col-10">
+                <div className = "calculatorContainer col-xl-4 col-lg-4 col-sm-6 col-10">
                     <h1 className = "calcText">Working Model :)</h1>
                     <Calculator />
                 </div>

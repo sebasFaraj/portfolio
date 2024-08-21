@@ -2,26 +2,29 @@
   font-size: 16px;
 }
 
-body {
-  min-height: 100vh;
-  
-}
-
-
 .navbar {
-  height: 7vh;
   background-color: rgb(97, 97, 97);
 }
 
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+
+/* Styling for Home */
+
 .homeContainer{
-  height: 93vh;
+  min-height: 93.65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
-  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);;
+}
+
+.homeContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .homeContainer > .mainText {
@@ -30,4 +33,125 @@ body {
 
 .homeContainer > div > .subText {
   font-size: 3rem;
+}
+
+
+@media (max-width: 500px) {
+  .homeContainer {
+    min-height: 96vh;
+  }
+}
+
+/* Styling for Projects */
+
+.projectWrapper {
+  padding: 1rem;
+}
+
+.projectRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card{
+  border: none;
+}
+
+.card > img {
+  height: 35vh;
+}
+
+
+/* Styling for Excuse Generator */
+
+.exHeader {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  padding: 1rem;
+}
+
+.exMain {
+  background-color: #ffffff;
+  height: 50vh;
+  width: 80%;
+  border: 5px black solid;
+  margin: 1rem auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.extopRow{
+  background-color: rgb(66,66,66);
+  border-radius: 5px;
+  border: 2px black solid;
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#excuseTypes{
+  font-family: inherit;
+  font-weight: bold;
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.generateExcuse{
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(181, 181, 181);
+}
+
+.bottomRow{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#excuseHeader{
+  text-align: start;
+}
+
+#excuse{
+  font-weight: 500;
+}
+
+
+@media (max-width: 700px)
+{
+  :root{
+    font-size: 14px;
+  }
+
+  .topRow{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .ex-topRow{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #excuseTypes{
+    width: 80%;
+  }
+
+  .Main{
+    height: 70vh;
+  }
 }

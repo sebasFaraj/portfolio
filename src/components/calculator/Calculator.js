@@ -122,7 +122,7 @@ export const Calculator = () => {
                     <Key value = {"9"} updateByKey = {updateByKey}/>
                 </div>
                 <div className = "col-3">
-                    <Key value = {" X "} updateByKey = {updateByKey}/>
+                    <Key value = {"X"} updateByKey = {updateByKey}/>
                 </div>
             </div>
             <div className = "row">
